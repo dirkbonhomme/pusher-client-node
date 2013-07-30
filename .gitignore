@@ -1,5 +1,7 @@
 !.gitignore
 
+debug.js
+
 node_modules
 npm-debug.log
 
