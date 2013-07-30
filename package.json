@@ -1,0 +1,22 @@
+{
+    "name": "pusher-client",
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Pusher client for node.js",
+    "keywords": ["pusher", "websockets", "realtime", "push", "client"],
+    "author": "Dirk Bonhomme <dirk@bytelogic.be>",
+    "main": "index",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/dirkbonhomme/pusher-client-node"
+    },
+    "dependencies": {
+        "underscore"        : "*",
+        "ws"                : "*",
+        "request"           : "*",
+        "eventemitter2"     : "*"
+    },
+    "engines": {
+        "node": ">=0.8"
+    }
+}

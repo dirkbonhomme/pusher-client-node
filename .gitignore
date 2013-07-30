@@ -1,0 +1,11 @@
+!.gitignore
+
+node_modules
+npm-debug.log
+
+.buildpath
+.project
+.settings
+.DS_Store
+.vagrant
+.idea
