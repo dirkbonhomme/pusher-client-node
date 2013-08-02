@@ -16,11 +16,19 @@
     "type": "git",
     "url": "git://github.com/dirkbonhomme/pusher-client-node"
   },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
   "dependencies": {
     "underscore": "*",
     "ws": "*",
     "request": "*",
     "eventemitter2": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "expect.js": "*",
+    "sinon": "*"
   },
   "engines": {
     "node": ">=0.8"
