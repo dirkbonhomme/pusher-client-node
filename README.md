@@ -177,9 +177,17 @@ There are a number of events which are used internally, but can also be of use e
 
 The library is published to NPM and can be installed with the following command:
 
-    npm install pusher-client
+    $ npm install pusher-client
 
 ## Testing
 
-There are no automated tests available at the moment. Feel free to contribute!  
-Use the [Pusher tests](https://github.com/pusher/pusher-js/blob/master/README.markdown#testing) as a starting point. 
+Navigate to this module's repository and make sure you have the development modules installed:
+
+    $ npm install
+
+
+Run the tests:
+
+    $ npm test
+
+About 70% of code has been covered so far. Most tests are a direct port of JavaScript tests. Use the [original Pusher tests](https://github.com/pusher/pusher-js/blob/master/README.markdown#testing) as a starting point.

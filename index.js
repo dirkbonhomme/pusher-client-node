@@ -1,1 +1,1 @@
-module.exports = require('./lib/pusher.js');
+module.exports = require('./lib/pusher');
