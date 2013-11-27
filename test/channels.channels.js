@@ -50,6 +50,24 @@ describe('Channels', function(){
         });
     });
 
+    describe('#list', function(){
+        it('should return empty array on init', function(){
+            var list = channels.list();
+            expect(list).to.be.an(Array);
+            expect(list).to.have.length(0);
+        });
+
+        it('should return all inserted channels', function(){
+            var channel1 = channels.add('test1', {});
+            var channel2 = channels.add('test2', {});
+            var list = channels.list();
+            expect(list).to.be.an(Array);
+            expect(list).to.have.length(2);
+            expect(list).to.contain(channel1);
+            expect(list).to.contain(channel2);
+        });
+    });
+
     describe('#remove', function(){
         it('should remove previously inserted channel', function(){
             channels.add('test1', {});

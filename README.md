@@ -166,6 +166,12 @@ These are bound to a specific channel, and mean that you can reuse event names i
 It is possible to bind to all events at either the global or channel level by using the method `bind_all`.
 This is used for debugging, but may have other utilities.
 
+### Getting all channels
+
+It is possible to retrieve a list of all channels you subscribed to or are subscribing to:
+
+    var channels = socket.allChannels();
+
 ## Default events
 
 There are a number of events which are used internally, but can also be of use elsewhere:

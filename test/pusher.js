@@ -70,6 +70,16 @@ describe('Pusher', function(){
         expect(pusher.channel('channel1')).to.be(undefined);
     });
 
+    it('should return all subscribed channels', function(){
+        var channel1 = pusher.subscribe('channel1');
+        var channel2 = pusher.subscribe('channel2');
+        var list = pusher.allChannels();
+        expect(list).to.be.an(Array);
+        expect(list).to.have.length(2);
+        expect(list).to.contain(channel1);
+        expect(list).to.contain(channel2);
+    });
+
     describe('encryption', function(){
         it('should be off by default', function(){
             expect(pusher.isEncrypted()).to.be(false);
