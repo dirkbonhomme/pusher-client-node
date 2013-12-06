@@ -1,6 +1,6 @@
 {
   "name": "pusher-client",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "license": "MIT",
   "description": "Pusher client for node.js",
   "keywords": [
@@ -17,7 +17,12 @@
     "url": "git://github.com/dirkbonhomme/pusher-client-node"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "make test"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "//^(?!.*node_modules.*$).*lib\//"
+    }
   },
   "dependencies": {
     "underscore": "*",
@@ -28,7 +33,8 @@
   "devDependencies": {
     "mocha": "*",
     "expect.js": "*",
-    "sinon": "*"
+    "sinon": "*",
+    "blanket": "git://github.com/alex-seville/blanket.git#development"
   },
   "engines": {
     "node": ">=0.8"
