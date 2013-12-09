@@ -42,6 +42,20 @@ Contrary to the JavaScript client, this library is able to generate an authentic
 When you provide the secret key (found under your app's access tokens on pusher.com) it will skip requests to the
 authentication endpoint and locally sign subscribe requests to private- and presence channels.
 
+#### `channel_data` (Object)
+
+When using a secret with a private- or presence- channel, you might want to also provide a channel_data object containing identifiable information about the client.
+
+    var pusher = new Pusher('app_key', {
+      secret: 'app_secret', 
+      channel_data: {
+        user_id: 'unique_user_id', 
+        user_info: {
+          name: 'User Name'
+        }
+      }
+    });
+
 #### `authEndpoint` (String)
 
 Endpoint on your server that will return the authentication signature needed for private channels.
