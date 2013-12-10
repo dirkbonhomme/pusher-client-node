@@ -44,7 +44,7 @@ authentication endpoint and locally sign subscribe requests to private- and pres
 
 #### `channel_data` (Object)
 
-When using a secret with a private- or presence- channel, you might want to also provide a channel_data object containing identifiable information about the client.
+When using a secret with a presence- channel, you might want to also provide a channel_data object containing identifiable information about the client.
 
     var pusher = new Pusher('app_key', {
       secret: 'app_secret', 
