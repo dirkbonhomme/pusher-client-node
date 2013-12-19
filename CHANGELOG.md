@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.1 (2013-12-19)
+
+[CHANGED] Updated to Pusher protocol 7
+[CHANGED] Using activity_timeout provided by connection handshake
+
+## 0.2.0 (2013-12-09)
+
+[NEW] Implemented channel_data for presence channels (kudos pauliusuza)
+
 ## 0.1.4 (2013-11-27)
 
 [NEW] Implemented pusher.allChannels
