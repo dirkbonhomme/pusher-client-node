@@ -131,6 +131,19 @@ describe('Pusher', function(){
             expect(Connection.prototype.initialize.getCall(0).args[0]).to.be('foo');
         });
 
+        it('should pass default host', function(){
+            var options = Connection.prototype.initialize.getCall(0).args[1] || {};
+            expect(options.host).to.be('ws.pusherapp.com');
+        });
+
+        it('should pass custom host based on cluster', function(){
+            new Pusher('foo', {
+                cluster: 'lorem'
+            });
+            var options = Connection.prototype.initialize.getCall(1).args[1] || {}; // first call is from beforeEach
+            expect(options.host).to.be('ws-lorem.pusher.com');
+        });
+
         it('should pass default timeout', function(){
             var options = Connection.prototype.initialize.getCall(0).args[1] || {};
             expect(options.activityTimeout).to.be(defaultOptions.activityTimeout);
