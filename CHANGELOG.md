@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2 (2014-06-17)
+
+[FIXED] Crash while trying to ping non-existent connection (kudos shimondoodkin)
+
 ## 0.2.1 (2013-12-19)
 
 [CHANGED] Updated to Pusher protocol 7
