@@ -1,6 +1,6 @@
 {
   "name": "pusher-client",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "license": "MIT",
   "description": "Pusher client for node.js",
   "keywords": [

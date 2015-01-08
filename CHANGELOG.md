@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.3 (2015-01-08)
+
+[FIXED] Force UTF-8 encoding for generating signatue (kudos arnihermann)
+
 ## 0.2.2 (2014-06-17)
 
 [FIXED] Crash while trying to ping non-existent connection (kudos shimondoodkin)
