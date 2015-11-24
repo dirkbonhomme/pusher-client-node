@@ -1,6 +1,6 @@
 {
   "name": "pusher-client",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "license": "MIT",
   "description": "Pusher client for node.js",
   "keywords": [
@@ -11,13 +11,16 @@
     "client"
   ],
   "author": "Dirk Bonhomme <dirk@bytelogic.be>",
-  "contributors": [{
-    "name": "Dirk Bonhomme",
-    "email": "dirk@bytelogic.be"
-  },{
-    "name": "Paulius Uza",
-    "email": "pauliusuza@gmail.com"
-  }],
+  "contributors": [
+    {
+      "name": "Dirk Bonhomme",
+      "email": "dirk@bytelogic.be"
+    },
+    {
+      "name": "Paulius Uza",
+      "email": "pauliusuza@gmail.com"
+    }
+  ],
   "main": "index",
   "repository": {
     "type": "git",
@@ -28,7 +31,7 @@
   },
   "config": {
     "blanket": {
-      "pattern": "//^(?!.*node_modules.*$).*lib\//"
+      "pattern": "//^(?!.*node_modules.*$).*lib//"
     }
   },
   "dependencies": {
