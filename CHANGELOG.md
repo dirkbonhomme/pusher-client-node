@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.0 (2016-01-14)
+
+[NEW] 1.0.0 release! (identical to 0.2.5)
+
+## 0.2.5 (2016-01-14)
+
+[FIXED] Fix crash for auth errors without response body (kudos jbcpollak)
+
+## 0.2.4 (2015-11-24)
+
+[FIXED] Have sendEvent return boolean to comply with JS lib
+
 ## 0.2.3 (2015-01-08)
 
 [FIXED] Force UTF-8 encoding for generating signatue (kudos arnihermann)
