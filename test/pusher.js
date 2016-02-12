@@ -32,9 +32,8 @@ var expectValidSubscriptions = function(connection, channels){
 
 describe('Pusher', function(){
 
-    var pusher, _instances, _autoConnect, connection;
+    var pusher, _autoConnect, connection;
     beforeEach(function(){
-        _instances = Pusher.instances;
         _autoConnect = Pusher.autoConnect;
 
         Pusher.autoConnect = false;
@@ -51,7 +50,6 @@ describe('Pusher', function(){
     });
 
     afterEach(function(){
-        Pusher.instances = _instances;
         Pusher.autoConnect = _autoConnect;
         Connection.prototype.initialize.restore();
         PublicChannel.prototype.initialize.restore();
