@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0 (2016-02-12)
+
+[FIXED] Removed references to Pusher.instances to avoid memory leaks (kudos enginoid)
+
 ## 1.0.0 (2016-01-14)
 
 [NEW] 1.0.0 release! (identical to 0.2.5)
